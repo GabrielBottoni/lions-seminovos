@@ -1,0 +1,27 @@
+.footer-section {
+    background-color: #1a1a1a;
+    color: #ccc;
+    border-top: 1px solid #333;
+}
+
+.footer-links {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-link {
+    color: #ccc;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #c41e3a;
+}
+
+.footer-credit {
+    font-size: 0.9rem;
+    color: #999;
+}

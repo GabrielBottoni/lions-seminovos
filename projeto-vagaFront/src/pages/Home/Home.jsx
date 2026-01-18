@@ -1,4 +1,5 @@
 import './home.css';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
     return (
@@ -14,26 +15,26 @@ export default function Home() {
                         <div className="carousel-inner">
                             <div className="carousel-item active">
                                 <img src="/src/assets/banner-1.webp" className="d-block" alt="..." />
-                                <div className="carousel-caption d-none d-md-block">
-                                    <h1>Blindados à pronta entrega</h1>
-                                    <p className='fs-5' >O conforto e segurança que você precisa</p>
-                                    <button className="btn btn-outline-light fw-semibold">Ver modelos</button>
+                                <div className="carousel-caption">
+                                    <h1 className="carousel-title">Blindados à pronta entrega</h1>
+                                    <p className="carousel-text">O conforto e segurança que você precisa</p>
+                                    <button className="btn btn-outline-light fw-semibold carousel-btn">Ver modelos</button>
                                 </div>
                             </div>
                             <div className="carousel-item">
                                 <img src="/src/assets/banner-2.webp" className="d-block" alt="..." />
-                                <div className="carousel-caption d-none d-md-block">
-                                    <h1>IPVA grátis !</h1>
-                                    <p className='fs-5'>Ofertas para você sair de carro novo hoje.</p>
-                                    <button className="btn btn-outline-light fw-semibold">Ver modelos</button>
+                                <div className="carousel-caption">
+                                    <h1 className="carousel-title">IPVA grátis !</h1>
+                                    <p className="carousel-text">Ofertas para você sair de carro novo hoje.</p>
+                                    <button className="btn btn-outline-light fw-semibold carousel-btn">Ver modelos</button>
                                 </div>
                             </div>
                             <div className="carousel-item">
                                 <img src="/src/assets/banner-3.webp" className="d-block" alt="..." />
-                                <div className="carousel-caption d-none d-md-block">
-                                    <h1>A First diz <b>SIM</b>!</h1>
-                                    <p>Aprovação rápida, confiança e transparência. Isso é FIRST.</p>
-                                    <button className="btn btn-outline-light fw-semibold">Confira</button>
+                                <div className="carousel-caption">
+                                    <h1 className="carousel-title">A First diz <b>SIM</b>!</h1>
+                                    <p className="carousel-text">Aprovação rápida, confiança e transparência. Isso é FIRST.</p>
+                                    <button className="btn btn-outline-light fw-semibold carousel-btn">Confira</button>
                                 </div>
                             </div>
                         </div>
@@ -55,30 +56,30 @@ export default function Home() {
                     <div className="row justify-content-center">
                         <div className="col-12">
                             <div className="row justify-content-center">
-                                <div className="col-md-4 mt-4 mb-4">
-                                    <div className="d-flex justify-content-center align-items-center gap-3 text-center">
-                                        <i className="bi bi-shield-check" style={{ fontSize: '4rem', color: '#c41e3a' }}></i>
+                                <div className="col-12 col-md-4 mt-4 mb-4">
+                                    <div className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 text-center features-item">
+                                        <i className="bi bi-shield-check features-icon"></i>
                                         <div>
-                                            <h5 className="fw-bold mb-1">Qualidade e Segurança</h5>
-                                            <p className="fw-semibold text-muted mb-0">Confira os melhores carros com os melhores preços aqui!</p>
+                                            <h5 className="fw-bold mb-1 features-title">Qualidade e Segurança</h5>
+                                            <p className="fw-semibold text-muted mb-0 features-text">Confira os melhores carros com os melhores preços aqui!</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-4 mt-4 mb-4">
-                                    <div className="d-flex justify-content-center align-items-center gap-3 text-center">
-                                        <i className="bi bi-truck" style={{ fontSize: '4rem', color: '#c41e3a' }}></i>
+                                <div className="col-12 col-md-4 mt-4 mb-4">
+                                    <div className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 text-center features-item">
+                                        <i className="bi bi-truck features-icon"></i>
                                         <div>
-                                            <h5 className="fw-bold mb-1">Carros à pronta entrega</h5>
-                                            <p className="fw-semibold text-muted mb-0">Diversos modelos à pronta entrega para você</p>
+                                            <h5 className="fw-bold mb-1 features-title">Carros à pronta entrega</h5>
+                                            <p className="fw-semibold text-muted mb-0 features-text">Diversos modelos à pronta entrega para você</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-4 mt-4 mb-4">
-                                    <div className="d-flex justify-content-center align-items-center gap-3 text-center">
-                                        <i className="bi bi-headset" style={{ fontSize: '4rem', color: '#c41e3a' }}></i>
+                                <div className="col-12 col-md-4 mt-4 mb-4">
+                                    <div className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 text-center features-item">
+                                        <i className="bi bi-headset features-icon"></i>
                                         <div>
-                                            <h5 className="fw-bold mb-1">Atendimento com foco em qualidade</h5>
-                                            <p className="fw-semibold text-muted mb-0">Atendimento focado em qualidade e satisfação do cliente</p>
+                                            <h5 className="fw-bold mb-1 features-title">Atendimento com foco em qualidade</h5>
+                                            <p className="fw-semibold text-muted mb-0 features-text">Atendimento focado em qualidade e satisfação do cliente</p>
                                         </div>
                                     </div>
                                 </div>
@@ -99,7 +100,7 @@ export default function Home() {
                                 <div className="card-body text-center">
                                     <h5 className="card-title fw-bold">Utilitários</h5>
                                     <p className="card-text text-muted">Explore nossa linha de utilitários</p>
-                                    <button className="btn btn-outline-danger btn-sm">Ver modelos</button>
+                                    <Link to="/catalogo" className="btn btn-outline-danger btn-sm">Ver modelos</Link>
                                 </div>
                             </div>
                         </div>
@@ -109,7 +110,7 @@ export default function Home() {
                                 <div className="card-body text-center">
                                     <h5 className="card-title fw-bold">SUV</h5>
                                     <p className="card-text text-muted">Explore nossa linha de SUV</p>
-                                    <button className="btn btn-outline-danger btn-sm">Ver modelos</button>
+                                    <Link to="/catalogo" className="btn btn-outline-danger btn-sm">Ver modelos</Link>
                                 </div>
                             </div>
                         </div>
@@ -119,7 +120,7 @@ export default function Home() {
                                 <div className="card-body text-center">
                                     <h5 className="card-title fw-bold">Hatch</h5>
                                     <p className="card-text text-muted">Explore nossa linha de Hatch</p>
-                                    <button className="btn btn-outline-danger btn-sm">Ver modelos</button>
+                                    <Link to="/catalogo" className="btn btn-outline-danger btn-sm">Ver modelos</Link>
                                 </div>
                             </div>
                         </div>
@@ -129,7 +130,7 @@ export default function Home() {
                                 <div className="card-body text-center">
                                     <h5 className="card-title fw-bold">Sedan</h5>
                                     <p className="card-text text-muted">Explore nossa linha de Sedan</p>
-                                    <button className="btn btn-outline-danger btn-sm">Ver modelos</button>
+                                    <Link to="/catalogo" className="btn btn-outline-danger btn-sm">Ver modelos</Link>
                                 </div>
                             </div>
                         </div>
@@ -140,12 +141,12 @@ export default function Home() {
             <section className="section-cars-background mt-5">
                 <div className="container">
                     <div className="row align-items-center min-vh-100">
-                        <div className="col-lg-6 d-flex flex-column justify-content-center">
+                        <div className="col-12 col-lg-6 d-flex flex-column justify-content-center">
                             <div className="analysis-header mb-4">
                                 <h4 className="analysis-title fw-bold fs-1 mb-2">Faça sua análise com a FIRST</h4>
                                 <p className="analysis-subtitle fw-bold fs-2 mb-0">Seu crédito em primeiro lugar.</p>
                             </div>
-                            <div className="card analysis-card">
+                            <div className="card analysis-card analysis-card-responsive">
                                 <div className="card-body">
                                     <p className="card-text text-muted fw-bold fs-4">Seu carro novo com aprovação facilitada.</p>
                                     <div className="mb-3 mt-4">

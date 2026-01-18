@@ -6,7 +6,6 @@
   z-index: 9999;
 }
 
-/* ABA FECHADA */
 .promo-tab {
   background-color: #b30000;
   color: white;
@@ -28,7 +27,6 @@
   white-space: nowrap;
 }
 
-/* CARD ABERTO */
 .promo-card {
   background-color: #b30000;
   width: 320px;
@@ -46,7 +44,6 @@
   to { transform: translateX(0); }
 }
 
-/* Estilos internos do formulário */
 .promo-form input, .promo-form select {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.2);

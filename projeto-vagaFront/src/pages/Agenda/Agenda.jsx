@@ -26,7 +26,6 @@ export default function Agenda() {
               <p className="text-muted fw-semibold mb-3">| Dados pessoais</p>
 
               <form>
-                {/* Nome e Telefone lado a lado */}
                 <div className="row">
                   <div className="col-md-6 mb-3">
                     <input
@@ -45,8 +44,6 @@ export default function Agenda() {
                     />
                   </div>
                 </div>
-
-                {/* Email abaixo */}
                 <div className="mb-3">
                   <input
                     type="email"
@@ -59,8 +56,6 @@ export default function Agenda() {
                 <p className="text-muted fw-semibold mb-2 mt-4">
                   | Loja e Horário
                 </p>
-
-                {/* Dropdown de Loja */}
                 <div className="mb-3">
                   <select className="form-select py-2">
                     <option value="">Selecionar loja mais próxima</option>
@@ -68,8 +63,6 @@ export default function Agenda() {
                     <option value="2">Loja Norte</option>
                   </select>
                 </div>
-
-                {/* Data e Horário lado a lado */}
                 <div className="row">
                   <div className="col-md-6 mb-3">
                     <input type="date" className="form-control py-2" required />
